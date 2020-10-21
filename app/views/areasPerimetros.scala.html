@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas Y Perimetros</title>
+
+    <style type="text/css">
+        .divfiguras{
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Areas Y Perimetros De Figuras</h1>
+
+    <select name="figuras" id="figuras">
+        <option selected disabled>Selecciona una figura</option>
+        <option value="cuadrado">Cuadrado</option>
+        <option value="rectangulo">Rectangulo</option>
+        <option value="triangulo">Triangulo</option>
+    </select>
+    <button type="button" id="btn-seleccionar" onclick="calcular()">Seleccionar</button>
+        <section>
+            <div id="cuadrado" class="divfiguras">
+                <p>¿Que deseas calcular de un Cuadrado?</p>
+                <select name="areayperimetrocuadrado" id="areayperimetrocuadrado">
+                    <option value="area">Area</option>
+                    <option value="perimetro">Perimetro</option>
+                </select>
+                <button type="button" id="btn-formulas" onclick="formulasCuadrado()">Seleccionar</button>
+
+                <div id="areaCuadrado" class="divfiguras">
+                    <p>Area de un Cuadrado</p>
+                    <label for="n1">Ingresa un Valor</label>
+                    <input type="number" id="n1">
+                    <label for="resultado">Resultado</label>
+                    <input type="" id="resultadoareacuadrado" readonly="readonly">
+                    <button id="btn-calcularArea" onclick="areaCuadrado()">Calcular</button>
+                </div>
+
+                <div id="perimetroCuadrado" class="divfiguras">
+                    <p>Perimetro de un Cuadrado</p>
+                    <label for="n2">Ingresa un Valor</label>
+                    <input type="number" id="n2">
+                    <label for="resultado">Resultado</label>
+                    <input type="" id="resultadoperimetrocuadrado" readonly="readonly">
+                    <button id="btn-calcularPerimetro" onclick="perimetroCuadrado()">Calcular</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="rectangulo" class="divfiguras">
+                <p>¿Que deseas calcular de un Rectangulo?</p>
+                <select name="areayperimetrorectangulo" id="areayperimetrorectangulo">
+                    <option value="area">Area</option>
+                    <option value="perimetro">Perimetro</option>
+                </select>
+                <button type="button" id="btn-seleccionar" onclick="formulasRectangulo()">Seleccionar</button>
+                <div id="areaRectangulo" class="divfiguras">
+                    <p>Area de un Rectangulo</p>
+                    <label for="n3">Ingresa la Base</label>
+                    <input type="number" id="n3">
+                    <label for="n4">Ingresa la Altura</label>
+                    <input type="number" id="n4">
+                    <label for="resultado">Resultado</label>
+                    <input type="" id="resultadoarearectangulo" readonly="readonly">
+                    <button id="btn-calcularArea" onclick="areaRectangulo()">Calcular</button>
+                </div>
+                <div id="perimetroRectangulo" class="divfiguras">
+                    <p>Perimetro de un Rectangulo</p>
+                    <label for="n5">Ingresa la Base</label>
+                    <input type="number" id="n5">
+                    <label for="n6">Ingresa la Altura</label>
+                    <input type="number" id="n6">
+                    <label for="resultado">Resultado</label>
+                    <input type="" id="resultadoperimetrorectangulo" readonly="readonly">
+                    <button id="btn-calcularPerimetro" onclick="perimetroRectangulo()">Calcular</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="triangulo" class="divfiguras">
+                <p>¿Que deseas calcular de un Triangulo?</p>
+                <select name="areayperimetrotriangulo" id="areayperimetrotriangulo">
+                    <option value="area">Area</option>
+                    <option value="perimetro">Perimetro</option>
+                </select>
+                <button type="button" id="btn-formulas" onclick="formulasTriangulo()">Seleccionar</button>
+
+                <div id="areaTriangulo" class="divfiguras">
+                    <p>Area de un Triangulo</p>
+                    <label for="n7">Ingresa la Base</label>
+                    <input type="number" id="n7">
+                    <label for="n8">Ingresa la Altura</label>
+                    <input type="number" id="n8">
+                    <label for="resultado">Resultado</label>
+                    <input type="" id="resultadoareatriangulo" readonly="readonly">
+                    <button id="btn-calcularArea" onclick="areaTriangulo()">Calcular</button>
+                </div>
+
+                <div id="perimetroTriangulo" class="divfiguras">
+                    <p>Perimetro de un Triangulo</p>
+                    <label for="n9">Ingresa un Valor</label>
+                    <input type="number" id="n9">
+                    <label for="resultado">Resultado</label>
+                    <input type="" id="resultadoperimetrotriangulo" readonly="readonly">
+                    <button id="btn-calcularPerimetro" onclick="perimetroTriangulo()">Calcular</button>
+                </div>
+            </div>
+        </section>
+    <br>
+    <br>
+    <a href="/ejercicios">
+        <button>Ejercicios</button>
+      </a>
+
+    <script src="/assets/javascripts/areasPerimetros.js"></script>
+</body>
+</html>

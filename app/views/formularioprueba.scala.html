@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Prueba</title>
+</head>
+<body>
+    <h1>Formulario Basico Consumiendo API</h1>
+    <form action="/registro" method="POST" id="formBasico">
+    <input type="text" name="name" id="nombre" placeholder="Nombre"> <br>
+    <input type="text" name="lastname" id="apellido" placeholder="Apellido"> <br>
+    <input type="password" name="password" id="password" placeholder="Password"> <br>
+    <input type="radio" name="gender" id="genero" value="hombre">Hombre 
+    <input type="radio" name="gender" id="mujer" value="mujer">Mujer 
+    <input type="radio" name="gender" id="noEspecificar" value="no especificar">No Especificar <br>
+    <input type="email" name="email" id="email" placeholder="Email"> <br>
+
+    <!-- <button type="button" id="btn-enviar" onclick="validar()">Enviar</button> -->
+    <button type="submit" id="btn-enviar">Enviar</button>
+
+    </form>
+
+    <br>
+    <a href="/">
+        <button>Inicio</button>
+        </a>
+    
+    <script src="/assets/javascripts/formularioprueba.js"></script>
+</body>
+</html>
